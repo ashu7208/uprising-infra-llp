@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Uprising Infra LLP</title>
+<meta name="description" content="A look at the building and infrastructure project capabilities of Uprising Infra LLP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .filter-bar { display: flex; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; }
+  .filter-btn {
+    padding: 10px 20px; border-radius: 999px; font-size: 13.5px; font-weight: 600;
+    background: var(--white); border: 1.5px solid var(--line); color: var(--charcoal); cursor: pointer;
+    transition: all 0.25s var(--ease);
+  }
+  .filter-btn:hover { border-color: var(--red); color: var(--red); }
+  .filter-btn.active { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); }
+  .proj-item { display: block; }
+  .proj-item.hidden { display: none; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <div class="loader-ring"><svg viewBox="0 0 100 100" fill="none"><path d="M50 12 A38 38 0 1 1 12 50" stroke="#E1452A" stroke-width="6" stroke-linecap="round"/></svg></div>
+    <div class="loader-text">UPRISING INFRA</div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 100 100" fill="none"><path d="M20 38 A30 30 0 0 0 80 38" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M28 38 A22 22 0 0 0 72 38" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M36 38 A14 14 0 0 0 64 38" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M20 38 L20 20 M80 38 L80 20" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M28 38 L28 20 M72 38 L72 20" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M36 38 L36 20 M64 38 L64 20" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/></svg></span>
+      <span class="brand-text">UPRISING<br>INFRA LLP<small>Construction &amp; Infrastructure</small></span>
+    </a>
+    <nav class="main-nav">
+      <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+      <div class="nav-item has-dropdown">
+        <a href="about.html" class="nav-link">About Us
+          <svg class="chev" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="about.html#overview"><span class="dot"></span>Company Overview</a>
+          <a href="about.html#leadership"><span class="dot"></span>Leadership</a>
+          <a href="about.html#credentials"><span class="dot"></span>Company Information</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="services.html" class="nav-link">Services
+          <svg class="chev" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="services.html#building"><span class="dot"></span>Building Construction</a>
+          <a href="services.html#infrastructure"><span class="dot"></span>Infrastructure &amp; Civil Works</a>
+          <a href="services.html#management"><span class="dot"></span>Project Management</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></div>
+      <div class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></div>
+      <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Projects</span></div>
+      <span class="eyebrow">Our Work</span>
+      <h1>Building and infrastructure capability, by category</h1>
+      <p>An overview of the project types Uprising Infra LLP undertakes across building construction and infrastructure works.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar reveal in">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="building">Building Construction</button>
+        <button class="filter-btn" data-filter="infrastructure">Infrastructure &amp; Civil</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="proj-item reveal in" data-cat="building">
+          <div class="project-card">
+            <div class="pvisual">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="background:var(--sand);">
+                <rect x="60" y="60" width="90" height="140" fill="#1C1C1E"/>
+                <rect x="160" y="30" width="100" height="170" fill="#E1452A"/>
+                <rect x="270" y="80" width="70" height="120" fill="#1C1C1E" opacity="0.8"/>
+                <g fill="#FBFAF8" opacity="0.85">
+                  <rect x="72" y="75" width="10" height="10"/><rect x="92" y="75" width="10" height="10"/>
+                  <rect x="72" y="100" width="10" height="10"/><rect x="92" y="100" width="10" height="10"/>
+                  <rect x="178" y="48" width="11" height="11"/><rect x="200" y="48" width="11" height="11"/><rect x="222" y="48" width="11" height="11"/>
+                  <rect x="178" y="74" width="11" height="11"/><rect x="200" y="74" width="11" height="11"/><rect x="222" y="74" width="11" height="11"/>
+                </g>
+              </svg>
+            </div>
+            <div class="pbody">
+              <span class="ptag">Residential</span>
+              <h4>Residential Building Construction</h4>
+              <p>Independent housing and row-house construction from foundation to handover.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item reveal in reveal-delay-1" data-cat="building">
+          <div class="project-card">
+            <div class="pvisual">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="background:linear-gradient(160deg,#1C1C1E,#2E2E31);">
+                <rect x="80" y="50" width="240" height="150" rx="4" fill="#F2694F" opacity="0.92"/>
+                <g fill="#1C1C1E" opacity="0.85">
+                  <rect x="100" y="70" width="30" height="40"/><rect x="140" y="70" width="30" height="40"/>
+                  <rect x="180" y="70" width="30" height="40"/><rect x="220" y="70" width="30" height="40"/><rect x="260" y="70" width="30" height="40"/>
+                  <rect x="100" y="130" width="30" height="40"/><rect x="140" y="130" width="30" height="40"/>
+                  <rect x="180" y="130" width="30" height="40"/><rect x="220" y="130" width="30" height="40"/><rect x="260" y="130" width="30" height="40"/>
+                </g>
+              </svg>
+            </div>
+            <div class="pbody">
+              <span class="ptag">Commercial</span>
+              <h4>Commercial Building Works</h4>
+              <p>Office and retail building shells with structural and finishing coordination.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item reveal in reveal-delay-2" data-cat="infrastructure">
+          <div class="project-card">
+            <div class="pvisual">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="background:var(--sand);">
+                <path d="M20 180 L100 130 L180 160 L260 110 L340 140 L380 120" stroke="#E1452A" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <g fill="#1C1C1E">
+                  <circle cx="100" cy="130" r="6"/><circle cx="180" cy="160" r="6"/><circle cx="260" cy="110" r="6"/><circle cx="340" cy="140" r="6"/>
+                </g>
+                <rect x="20" y="185" width="360" height="6" fill="#1C1C1E" opacity="0.15"/>
+              </svg>
+            </div>
+            <div class="pbody">
+              <span class="ptag">Civil Works</span>
+              <h4>Site Development &amp; Earthwork</h4>
+              <p>Ground preparation, levelling and earthwork ahead of structural construction.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item reveal in" data-cat="infrastructure">
+          <div class="project-card">
+            <div class="pvisual">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="background:linear-gradient(160deg,#1C1C1E,#2E2E31);">
+                <rect x="40" y="160" width="320" height="20" fill="#6B6B6E"/>
+                <rect x="40" y="160" width="320" height="6" fill="#E1452A"/>
+                <g stroke="#FBFAF8" stroke-width="2" opacity="0.4">
+                  <line x1="70" y1="166" x2="90" y2="166"/><line x1="120" y1="166" x2="140" y2="166"/>
+                  <line x1="170" y1="166" x2="190" y2="166"/><line x1="220" y1="166" x2="240" y2="166"/>
+                  <line x1="270" y1="166" x2="290" y2="166"/><line x1="320" y1="166" x2="340" y2="166"/>
+                </g>
+                <path d="M40 160 L60 60 L100 60 L120 160" fill="#2E2E31" stroke="#E1452A" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="pbody">
+              <span class="ptag">Civil Works</span>
+              <h4>Access Roads &amp; Paving</h4>
+              <p>Internal road and paving works supporting site access and movement.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item reveal in reveal-delay-1" data-cat="building">
+          <div class="project-card">
+            <div class="pvisual">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="background:var(--sand);">
+                <rect x="100" y="40" width="200" height="160" rx="4" fill="#1C1C1E"/>
+                <rect x="100" y="40" width="200" height="14" fill="#E1452A"/>
+                <g fill="#F2694F">
+                  <rect x="120" y="70" width="35" height="50" rx="2"/><rect x="165" y="70" width="35" height="50" rx="2"/>
+                  <rect x="210" y="70" width="35" height="50" rx="2"/><rect x="255" y="70" width="35" height="50" rx="2"/>
+                  <rect x="120" y="135" width="35" height="50" rx="2"/><rect x="165" y="135" width="35" height="50" rx="2"/>
+                  <rect x="210" y="135" width="35" height="50" rx="2"/><rect x="255" y="135" width="35" height="50" rx="2"/>
+                </g>
+              </svg>
+            </div>
+            <div class="pbody">
+              <span class="ptag">Structural</span>
+              <h4>RCC Structural Works</h4>
+              <p>Reinforced concrete structural execution for multi-storey building frames.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item reveal in reveal-delay-2" data-cat="infrastructure">
+          <div class="project-card">
+            <div class="pvisual">
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" style="background:linear-gradient(160deg,#1C1C1E,#2E2E31);">
+                <path d="M40 180 V120 H160 V180" stroke="#E1452A" stroke-width="3" fill="none"/>
+                <path d="M200 180 V100 H260 V180" stroke="#F2694F" stroke-width="3" fill="none"/>
+                <path d="M300 180 V140 H360 V180" stroke="#E1452A" stroke-width="3" fill="none"/>
+                <circle r="4" fill="#F2694F">
+                  <animateMotion dur="5s" repeatCount="indefinite" path="M40 120 H160 M200 100 H260 M300 140 H360"/>
+                </circle>
+              </svg>
+            </div>
+            <div class="pbody">
+              <span class="ptag">Civil Works</span>
+              <h4>Drainage &amp; Site Utilities</h4>
+              <p>Stormwater drainage and underground utility works integrated with site planning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-sand">
+    <div class="container">
+      <div class="cta-band reveal in">
+        <h2>Have a project that fits this scope?</h2>
+        <p>Share your requirement and our team will get back with next steps.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-light"><span>Start a Conversation</span>
+            <svg class="arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#1C1C1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark"><svg viewBox="0 0 100 100" fill="none"><path d="M20 38 A30 30 0 0 0 80 38" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M28 38 A22 22 0 0 0 72 38" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M36 38 A14 14 0 0 0 64 38" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M20 38 L20 20 M80 38 L80 20" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M28 38 L28 20 M72 38 L72 20" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/><path d="M36 38 L36 20 M64 38 L64 20" stroke="#E1452A" stroke-width="7" stroke-linecap="round"/></svg></span>
+          <span class="brand-text">UPRISING<br>INFRA LLP</span>
+        </a>
+        <p>A Mumbai-based construction LLP delivering building construction, infrastructure and civil works with reliability at every stage.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5.6c-.34-.05-1.5-.15-2.86-.15-2.84 0-4.64 1.73-4.64 4.9V13H7v3h2.5v8h3.2v-8h2.7l.4-3h-3.1V10.5c0-.87.23-1.47 1.5-1.47z" fill="white"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="white" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="white"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="white" stroke-width="1.5"/><path d="M8 10v6M8 7.5v.01M12 16v-3.5c0-1.5 1-2.2 2-2.2s2 .7 2 2.2V16" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html#overview">Company Overview</a>
+        <a href="about.html#leadership">Leadership</a>
+        <a href="about.html#credentials">Company Information</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#building">Building Construction</a>
+        <a href="services.html#infrastructure">Infrastructure &amp; Civil</a>
+        <a href="services.html#management">Project Management</a>
+        <a href="projects.html">Our Projects</a>
+      </div>
+      <div class="footer-col">
+        <h5>Registered Office</h5>
+        <a href="contact.html" style="margin-bottom:8px;">401, Oriental Heights, Plot No. 158, Sector 44, Seawoods, Navi Mumbai 400706</a>
+        <a href="tel:02227560373">022-2756 0373</a>
+        <a href="mailto:info@uprisinginfra.com">info@uprisinginfra.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Uprising Infra LLP. All rights reserved.</span>
+      <span>LLPIN: AAS-6610 · ROC Mumbai I</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><svg viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+<script src="js/main.js"></script>
+<script>
+  (function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.proj-item');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          if (filter === 'all' || item.dataset.cat === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
